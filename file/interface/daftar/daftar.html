@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up TaniTani</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<div class="container">
+  <div class="info">
+    <h1>Silahkan Daftar</h1><span>Made with <i class="fa fa-heart"></i> by <a href="http://andytran.me">TaniTani Corporation</a></span>
+  </div>
+</div>
+<div class="form">
+  <div class="thumbnail"><a href="../homepage/indeks.html"><img src="topi.png"></a></div>
+  <form name="create" action="inputprocessuser.php" method="POST">
+    <table cellpadding="10">
+  <tr>
+    <td><label for="user">Username </label></td>
+    <td><input type="text" name="username" placeholder="Username" required id="user"></td>
+    <br>
+  </tr>
+  <tr>
+    <td><label for="full_name">Fullname </label></td>
+    <td><input type="text" name="fullname" placeholder="Fullname" id="full_name" required></td>
+  </tr>
+  <tr>
+    <td><label for="email">Email </label></td>
+    <td>
+    <input type="email" name="email" placeholder="Email" id="email" required>
+    </td>
+  </tr>
+  <tr>
+    <td><label for="pass">Password </label></td>
+    <td><input type="password" name="password" placeholder="Password" id="pass" required></td>
+  </tr>
+  <tr>
+    <td><label for="sex">Gender </label></td>
+    <td>
+    <input type="radio" name="sex" value="Male" id="sex" checked> Male </td>
+    <td><input type="radio" name="sex" value="Female"> Female
+    </td>
+  </tr>
+  <tr>
+    <td>User Picture </td>
+      <td><input type="file" name="pict" required></textarea></td>
+  </tr>
+
+  </table>
+    <button type="submit">Sign Up</button>
+  </form>  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</div>
+<video id="video" autoplay="autoplay" loop="loop" poster="polina.jpg">
+  <source src="http://andytran.me/A%20peaceful%20nature%20timelapse%20video.mp4" type="video/mp4"/>
+</video>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

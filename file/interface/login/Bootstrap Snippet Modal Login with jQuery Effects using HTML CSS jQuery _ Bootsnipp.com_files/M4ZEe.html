@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://d2d3qesrx8xj6s.cloudfront.net/iframe/M4ZEe -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="robots" content="noindex">
+
+    <title>Login Modal - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap.min(2).css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+    .modal-footer{
+    text-align: left;    
+}
+
+.form-inline .form-group {
+    margin-bottom: 11px;
+}
+
+.form-inline .control-label {
+    width: 110px;
+    text-align:right;
+    margin-right: 10px;
+}
+    </style>
+    <script src="./jquery-1.10.2.min.js.download"></script>
+    <script src="./bootstrap.min.js(2).download"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+</head>
+<body>
+	<div class="container">
+	<div class="row">
+        <!-- Link trigger modal -->
+        <a data-toggle="modal" data-target="#becomeamember">
+         Become a member
+        </a>&nbsp;&nbsp;&nbsp;
+        <a data-toggle="modal" data-target="#login">
+         Login
+        </a>
+
+        <!-- Modal Become a member -->
+        <form action="https://d2d3qesrx8xj6s.cloudfront.net/iframe/M4ZEe#" method="post" id="newmember">
+        <div class="modal fade" id="becomeamember" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Become a member</h4>
+              </div>
+              <div class="modal-body form-inline">
+                <div class="form-group has-feedback">
+                    <label class="control-label" for="firstnamelabel">* First name</label>
+                    <input type="text" class="form-control" id="firstnameinput" aria-describedby="firstnameinput" required="">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                </div>
+                
+                <div class="form-group has-feedback">
+                    <label class="control-label" for="lastnamelabel">* Last name</label>
+                    <input type="text" class="form-control" id="lastnameinput" aria-describedby="lastnameinput" required="">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                </div>
+                
+                <div class="form-group has-feedback">
+                    <label class="control-label" for="emaillabel">* Email address</label>
+                    <input type="email" class="form-control" id="emailinput" aria-describedby="emailinput" required="">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                </div>
+                
+                <div class="form-group has-feedback">
+                    <label class="control-label" for="passwordlabel">* Password</label>
+                    <input type="password" class="form-control" id="passwordinput" aria-describedby="passwordinput" required="">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                </div>
+                
+                <div class="form-group has-feedback">
+                    <label class="control-label" for="re-enterpasswordlabel">* Re-enter password</label>
+                    <input type="password" class="form-control" id="re-enterpasswordinput" aria-describedby="re-enterpasswordinput" required="">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                </div>
+                
+                <div class="form-group has-feedback">
+                    <label class="control-label" for="postcodelabel">Postcode</label>
+                    <input type="text" class="form-control" id="postcodeinput" aria-describedby="postcodeinput">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                </div>
+                
+                 <div class="form-group">
+                    <label class="control-label" for="postcodelabel">How did you hear about us?</label>
+                    <select class="form-control">
+                        <option>- Please select -</option>
+                        <option>Search engine</option>
+                        <option>Web Advertisement</option>
+                        <option>Magazine Advertisement</option>
+                        <option>Friend/Colleague</option>
+                        <option>Email newsletter</option>
+                        <option>Fax</option>
+                        <option>Conference/Tradeshow</option>
+                        <option>Social Media</option>
+                        <option>Other</option>
+                    </select>
+                </div><br>
+                
+                 <div class="form-group">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Sign up</button>
+                 </div>
+                
+              </div><!-- end modal-Body -->
+              
+            </div>
+          </div>
+        </div><!-- end become a member modal -->
+        </form> <!-- end Form -->
+        
+        <!-- Modal Login -->
+        <form id="logingform" action="https://d2d3qesrx8xj6s.cloudfront.net/" method="post">
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Login</h4>
+              </div>
+              
+              <div class="modal-body">
+                <div class="form-group has-feedback">
+                  <label class="control-label">Email Address</label>
+                  <input type="email" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" placeholder="Email">
+                  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                </div>
+                
+                <div class="form-group has-feedback">
+                  <label class="control-label">Password</label>
+                  <input type="password" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" placeholder="Password">
+                  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                </div>
+                
+                <button type="button" class="btn btn-primary">Login</button>
+                <input type="checkbox" value="rememberme" id="rememberme">Remember me <br><br>
+                
+                <a href="https://d2d3qesrx8xj6s.cloudfront.net/iframe/M4ZEe#">Forgot your password?</a>
+                
+              </div>
+              
+              <div class="modal-footer">
+              <h4 class="modal-title" id="myModalLabel">Register</h4>
+                If you are not an existing member of this site you can <a data-toggle="modal" data-target="#becomeamember" data-dismiss="modal"> register here</a>
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>-->
+              </div>
+              
+            </div>
+          </div>
+        </div><!-- end become a member modal -->
+        </form> <!-- end login form -->
+        
+	</div>
+</div>
+	<script type="text/javascript">
+	
+	</script>
+
+
+</body></html>
